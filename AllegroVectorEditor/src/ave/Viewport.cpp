@@ -7,3 +7,13 @@
 //
 
 #include "Viewport.h"
+namespace ave {
+    Viewport::Viewport(Canvas& newCanvas):
+        myCanvas(&newCanvas)
+    {
+    }
+    
+    void Viewport::drawToDisplay(ALLEGRO_DISPLAY *disp) const{
+        al_draw_line(0, 0, 100, 100, al_map_rgb(255, 0, 0), 3);
+    }
+}

@@ -10,15 +10,17 @@
 #define AllegroVectorEditor__Viewport
 #include "Canvas.h"
 #include "Rect.h"
+#include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro.h>
 namespace ave {
 class Viewport {
     private:
-    Canvas myCanvas;
+    Canvas *myCanvas;
     Rect viewSpace;
     
     public:
     void drawToDisplay(ALLEGRO_DISPLAY *disp) const;
+    Viewport(Canvas& newCanvas);
 };
 }
 

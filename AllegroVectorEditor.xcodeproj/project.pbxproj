@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2058B83415CB98D800C316BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B83315CB98D800C316BB /* Cocoa.framework */; };
-		2058B84015CB98D800C316BB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B83F15CB98D800C316BB /* main.cpp */; };
 		2058B85C15CB99C600C316BB /* liballegro_acodec.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85115CB99C600C316BB /* liballegro_acodec.5.0.7.dylib */; };
 		2058B85D15CB99C600C316BB /* liballegro_audio.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85215CB99C600C316BB /* liballegro_audio.5.0.7.dylib */; };
 		2058B85E15CB99C600C316BB /* liballegro_color.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85315CB99C600C316BB /* liballegro_color.5.0.7.dylib */; };
@@ -20,6 +19,14 @@
 		2058B86415CB99C700C316BB /* liballegro_primitives.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85915CB99C600C316BB /* liballegro_primitives.5.0.7.dylib */; };
 		2058B86515CB99C700C316BB /* liballegro_ttf.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85A15CB99C600C316BB /* liballegro_ttf.5.0.7.dylib */; };
 		2058B86615CB99C700C316BB /* liballegro.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85B15CB99C600C316BB /* liballegro.5.0.7.dylib */; };
+		2058B88715CBA6E900C316BB /* Colour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B87E15CBA6E900C316BB /* Colour.cpp */; };
+		2058B88815CBA6E900C316BB /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B88015CBA6E900C316BB /* Image.cpp */; };
+		2058B88915CBA6E900C316BB /* Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B88215CBA6E900C316BB /* Line.cpp */; };
+		2058B88A15CBA6E900C316BB /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B88415CBA6E900C316BB /* Vertex.cpp */; };
+		2058B88B15CBA6E900C316BB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B88615CBA6E900C316BB /* main.cpp */; };
+		2058B88E15CBA9DB00C316BB /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B88C15CBA9DA00C316BB /* Canvas.cpp */; };
+		2058B89115CBAE6200C316BB /* Viewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B88F15CBAE6200C316BB /* Viewport.cpp */; };
+		2058B89415CBAEC800C316BB /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B89215CBAEC700C316BB /* Rect.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +36,6 @@
 		2058B83715CB98D800C316BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2058B83815CB98D800C316BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2058B83B15CB98D800C316BB /* AllegroVectorEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllegroVectorEditor-Info.plist"; sourceTree = "<group>"; };
-		2058B83F15CB98D800C316BB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = AllegroVectorEditor/main.cpp; sourceTree = "<group>"; };
 		2058B85115CB99C600C316BB /* liballegro_acodec.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_acodec.5.0.7.dylib; sourceTree = "<group>"; };
 		2058B85215CB99C600C316BB /* liballegro_audio.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_audio.5.0.7.dylib; sourceTree = "<group>"; };
 		2058B85315CB99C600C316BB /* liballegro_color.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_color.5.0.7.dylib; sourceTree = "<group>"; };
@@ -41,6 +47,21 @@
 		2058B85915CB99C600C316BB /* liballegro_primitives.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_primitives.5.0.7.dylib; sourceTree = "<group>"; };
 		2058B85A15CB99C600C316BB /* liballegro_ttf.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_ttf.5.0.7.dylib; sourceTree = "<group>"; };
 		2058B85B15CB99C600C316BB /* liballegro.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B87E15CBA6E900C316BB /* Colour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Colour.cpp; sourceTree = "<group>"; };
+		2058B87F15CBA6E900C316BB /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
+		2058B88015CBA6E900C316BB /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		2058B88115CBA6E900C316BB /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		2058B88215CBA6E900C316BB /* Line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Line.cpp; sourceTree = "<group>"; };
+		2058B88315CBA6E900C316BB /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		2058B88415CBA6E900C316BB /* Vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
+		2058B88515CBA6E900C316BB /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		2058B88615CBA6E900C316BB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2058B88C15CBA9DA00C316BB /* Canvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Canvas.cpp; sourceTree = "<group>"; };
+		2058B88D15CBA9DB00C316BB /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		2058B88F15CBAE6200C316BB /* Viewport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Viewport.cpp; sourceTree = "<group>"; };
+		2058B89015CBAE6200C316BB /* Viewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viewport.h; sourceTree = "<group>"; };
+		2058B89215CBAEC700C316BB /* Rect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rect.cpp; sourceTree = "<group>"; };
+		2058B89315CBAEC800C316BB /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +90,7 @@
 		2058B82415CB98D800C316BB = {
 			isa = PBXGroup;
 			children = (
-				2058B85015CB98E300C316BB /* Sources */,
+				2058B87B15CBA6E900C316BB /* src */,
 				2058B83915CB98D800C316BB /* AllegroVectorEditor */,
 				2058B83215CB98D800C316BB /* Frameworks */,
 				2058B83015CB98D800C316BB /* Products */,
@@ -130,12 +151,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2058B85015CB98E300C316BB /* Sources */ = {
+		2058B87B15CBA6E900C316BB /* src */ = {
 			isa = PBXGroup;
 			children = (
-				2058B83F15CB98D800C316BB /* main.cpp */,
+				2058B87C15CBA6E900C316BB /* ave */,
+				2058B88615CBA6E900C316BB /* main.cpp */,
 			);
-			name = Sources;
+			name = src;
+			path = AllegroVectorEditor/src;
+			sourceTree = "<group>";
+		};
+		2058B87C15CBA6E900C316BB /* ave */ = {
+			isa = PBXGroup;
+			children = (
+				2058B87D15CBA6E900C316BB /* vec */,
+				2058B88D15CBA9DB00C316BB /* Canvas.h */,
+				2058B88C15CBA9DA00C316BB /* Canvas.cpp */,
+				2058B88F15CBAE6200C316BB /* Viewport.cpp */,
+				2058B89015CBAE6200C316BB /* Viewport.h */,
+				2058B89315CBAEC800C316BB /* Rect.h */,
+				2058B89215CBAEC700C316BB /* Rect.cpp */,
+			);
+			path = ave;
+			sourceTree = "<group>";
+		};
+		2058B87D15CBA6E900C316BB /* vec */ = {
+			isa = PBXGroup;
+			children = (
+				2058B87F15CBA6E900C316BB /* Colour.h */,
+				2058B87E15CBA6E900C316BB /* Colour.cpp */,
+				2058B88115CBA6E900C316BB /* Image.h */,
+				2058B88015CBA6E900C316BB /* Image.cpp */,
+				2058B88315CBA6E900C316BB /* Line.h */,
+				2058B88215CBA6E900C316BB /* Line.cpp */,
+				2058B88515CBA6E900C316BB /* Vertex.h */,
+				2058B88415CBA6E900C316BB /* Vertex.cpp */,
+			);
+			path = vec;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2058B84015CB98D800C316BB /* main.cpp in Sources */,
+				2058B88715CBA6E900C316BB /* Colour.cpp in Sources */,
+				2058B88815CBA6E900C316BB /* Image.cpp in Sources */,
+				2058B88915CBA6E900C316BB /* Line.cpp in Sources */,
+				2058B88A15CBA6E900C316BB /* Vertex.cpp in Sources */,
+				2058B88B15CBA6E900C316BB /* main.cpp in Sources */,
+				2058B88E15CBA9DB00C316BB /* Canvas.cpp in Sources */,
+				2058B89115CBAE6200C316BB /* Viewport.cpp in Sources */,
+				2058B89415CBAEC800C316BB /* Rect.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
