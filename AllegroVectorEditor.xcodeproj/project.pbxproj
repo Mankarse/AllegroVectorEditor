@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2058B83415CB98D800C316BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B83315CB98D800C316BB /* Cocoa.framework */; };
-		2058B83E15CB98D800C316BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2058B83C15CB98D800C316BB /* InfoPlist.strings */; };
-		2058B84015CB98D800C316BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B83F15CB98D800C316BB /* main.m */; };
-		2058B84415CB98D800C316BB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2058B84215CB98D800C316BB /* Credits.rtf */; };
-		2058B84715CB98D800C316BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058B84615CB98D800C316BB /* AppDelegate.m */; };
-		2058B84A15CB98D800C316BB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2058B84815CB98D800C316BB /* MainMenu.xib */; };
+		2058B84015CB98D800C316BB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B83F15CB98D800C316BB /* main.cpp */; };
+		2058B85C15CB99C600C316BB /* liballegro_acodec.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85115CB99C600C316BB /* liballegro_acodec.5.0.7.dylib */; };
+		2058B85D15CB99C600C316BB /* liballegro_audio.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85215CB99C600C316BB /* liballegro_audio.5.0.7.dylib */; };
+		2058B85E15CB99C600C316BB /* liballegro_color.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85315CB99C600C316BB /* liballegro_color.5.0.7.dylib */; };
+		2058B85F15CB99C600C316BB /* liballegro_dialog.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85415CB99C600C316BB /* liballegro_dialog.5.0.7.dylib */; };
+		2058B86015CB99C600C316BB /* liballegro_font.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85515CB99C600C316BB /* liballegro_font.5.0.7.dylib */; };
+		2058B86115CB99C600C316BB /* liballegro_image.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85615CB99C600C316BB /* liballegro_image.5.0.7.dylib */; };
+		2058B86215CB99C600C316BB /* liballegro_main.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85715CB99C600C316BB /* liballegro_main.5.0.7.dylib */; };
+		2058B86315CB99C700C316BB /* liballegro_memfile.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85815CB99C600C316BB /* liballegro_memfile.5.0.7.dylib */; };
+		2058B86415CB99C700C316BB /* liballegro_primitives.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85915CB99C600C316BB /* liballegro_primitives.5.0.7.dylib */; };
+		2058B86515CB99C700C316BB /* liballegro_ttf.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85A15CB99C600C316BB /* liballegro_ttf.5.0.7.dylib */; };
+		2058B86615CB99C700C316BB /* liballegro.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2058B85B15CB99C600C316BB /* liballegro.5.0.7.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +29,18 @@
 		2058B83715CB98D800C316BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2058B83815CB98D800C316BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2058B83B15CB98D800C316BB /* AllegroVectorEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllegroVectorEditor-Info.plist"; sourceTree = "<group>"; };
-		2058B83D15CB98D800C316BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2058B83F15CB98D800C316BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2058B84115CB98D800C316BB /* AllegroVectorEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AllegroVectorEditor-Prefix.pch"; sourceTree = "<group>"; };
-		2058B84315CB98D800C316BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2058B84515CB98D800C316BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2058B84615CB98D800C316BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2058B84915CB98D800C316BB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2058B83F15CB98D800C316BB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = AllegroVectorEditor/main.cpp; sourceTree = "<group>"; };
+		2058B85115CB99C600C316BB /* liballegro_acodec.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_acodec.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85215CB99C600C316BB /* liballegro_audio.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_audio.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85315CB99C600C316BB /* liballegro_color.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_color.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85415CB99C600C316BB /* liballegro_dialog.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_dialog.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85515CB99C600C316BB /* liballegro_font.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_font.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85615CB99C600C316BB /* liballegro_image.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_image.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85715CB99C600C316BB /* liballegro_main.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_main.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85815CB99C600C316BB /* liballegro_memfile.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_memfile.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85915CB99C600C316BB /* liballegro_primitives.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_primitives.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85A15CB99C600C316BB /* liballegro_ttf.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro_ttf.5.0.7.dylib; sourceTree = "<group>"; };
+		2058B85B15CB99C600C316BB /* liballegro.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.0.7.dylib; path = ../../../../../usr/local/lib/liballegro.5.0.7.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2058B83415CB98D800C316BB /* Cocoa.framework in Frameworks */,
+				2058B85C15CB99C600C316BB /* liballegro_acodec.5.0.7.dylib in Frameworks */,
+				2058B85D15CB99C600C316BB /* liballegro_audio.5.0.7.dylib in Frameworks */,
+				2058B85E15CB99C600C316BB /* liballegro_color.5.0.7.dylib in Frameworks */,
+				2058B85F15CB99C600C316BB /* liballegro_dialog.5.0.7.dylib in Frameworks */,
+				2058B86015CB99C600C316BB /* liballegro_font.5.0.7.dylib in Frameworks */,
+				2058B86115CB99C600C316BB /* liballegro_image.5.0.7.dylib in Frameworks */,
+				2058B86215CB99C600C316BB /* liballegro_main.5.0.7.dylib in Frameworks */,
+				2058B86315CB99C700C316BB /* liballegro_memfile.5.0.7.dylib in Frameworks */,
+				2058B86415CB99C700C316BB /* liballegro_primitives.5.0.7.dylib in Frameworks */,
+				2058B86515CB99C700C316BB /* liballegro_ttf.5.0.7.dylib in Frameworks */,
+				2058B86615CB99C700C316BB /* liballegro.5.0.7.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +69,7 @@
 		2058B82415CB98D800C316BB = {
 			isa = PBXGroup;
 			children = (
+				2058B85015CB98E300C316BB /* Sources */,
 				2058B83915CB98D800C316BB /* AllegroVectorEditor */,
 				2058B83215CB98D800C316BB /* Frameworks */,
 				2058B83015CB98D800C316BB /* Products */,
@@ -63,6 +87,17 @@
 		2058B83215CB98D800C316BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2058B85115CB99C600C316BB /* liballegro_acodec.5.0.7.dylib */,
+				2058B85215CB99C600C316BB /* liballegro_audio.5.0.7.dylib */,
+				2058B85315CB99C600C316BB /* liballegro_color.5.0.7.dylib */,
+				2058B85415CB99C600C316BB /* liballegro_dialog.5.0.7.dylib */,
+				2058B85515CB99C600C316BB /* liballegro_font.5.0.7.dylib */,
+				2058B85615CB99C600C316BB /* liballegro_image.5.0.7.dylib */,
+				2058B85715CB99C600C316BB /* liballegro_main.5.0.7.dylib */,
+				2058B85815CB99C600C316BB /* liballegro_memfile.5.0.7.dylib */,
+				2058B85915CB99C600C316BB /* liballegro_primitives.5.0.7.dylib */,
+				2058B85A15CB99C600C316BB /* liballegro_ttf.5.0.7.dylib */,
+				2058B85B15CB99C600C316BB /* liballegro.5.0.7.dylib */,
 				2058B83315CB98D800C316BB /* Cocoa.framework */,
 				2058B83515CB98D800C316BB /* Other Frameworks */,
 			);
@@ -82,9 +117,6 @@
 		2058B83915CB98D800C316BB /* AllegroVectorEditor */ = {
 			isa = PBXGroup;
 			children = (
-				2058B84515CB98D800C316BB /* AppDelegate.h */,
-				2058B84615CB98D800C316BB /* AppDelegate.m */,
-				2058B84815CB98D800C316BB /* MainMenu.xib */,
 				2058B83A15CB98D800C316BB /* Supporting Files */,
 			);
 			path = AllegroVectorEditor;
@@ -94,12 +126,16 @@
 			isa = PBXGroup;
 			children = (
 				2058B83B15CB98D800C316BB /* AllegroVectorEditor-Info.plist */,
-				2058B83C15CB98D800C316BB /* InfoPlist.strings */,
-				2058B83F15CB98D800C316BB /* main.m */,
-				2058B84115CB98D800C316BB /* AllegroVectorEditor-Prefix.pch */,
-				2058B84215CB98D800C316BB /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2058B85015CB98E300C316BB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2058B83F15CB98D800C316BB /* main.cpp */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +189,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2058B83E15CB98D800C316BB /* InfoPlist.strings in Resources */,
-				2058B84415CB98D800C316BB /* Credits.rtf in Resources */,
-				2058B84A15CB98D800C316BB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,39 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2058B84015CB98D800C316BB /* main.m in Sources */,
-				2058B84715CB98D800C316BB /* AppDelegate.m in Sources */,
+				2058B84015CB98D800C316BB /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2058B83C15CB98D800C316BB /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2058B83D15CB98D800C316BB /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2058B84215CB98D800C316BB /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2058B84315CB98D800C316BB /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		2058B84815CB98D800C316BB /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2058B84915CB98D800C316BB /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2058B84B15CB98D800C316BB /* Debug */ = {
@@ -206,10 +211,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -222,6 +228,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -233,16 +241,19 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -252,8 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AllegroVectorEditor/AllegroVectorEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "AllegroVectorEditor/AllegroVectorEditor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -264,8 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AllegroVectorEditor/AllegroVectorEditor-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "AllegroVectorEditor/AllegroVectorEditor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
