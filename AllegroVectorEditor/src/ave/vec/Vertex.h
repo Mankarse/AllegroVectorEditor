@@ -9,6 +9,7 @@ class Vertex{
     double xCoord;
     double yCoord;
     
+    //Vertex(double x, double y);
 };
 }
 }

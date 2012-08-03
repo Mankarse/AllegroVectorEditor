@@ -27,6 +27,7 @@
 		2058B88E15CBA9DB00C316BB /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B88C15CBA9DA00C316BB /* Canvas.cpp */; };
 		2058B89115CBAE6200C316BB /* Viewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B88F15CBAE6200C316BB /* Viewport.cpp */; };
 		2058B89415CBAEC800C316BB /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B89215CBAEC700C316BB /* Rect.cpp */; };
+		2058B89A15CBC56D00C316BB /* EditedVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2058B89815CBC56D00C316BB /* EditedVertex.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		2058B89015CBAE6200C316BB /* Viewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viewport.h; sourceTree = "<group>"; };
 		2058B89215CBAEC700C316BB /* Rect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rect.cpp; sourceTree = "<group>"; };
 		2058B89315CBAEC800C316BB /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
+		2058B89815CBC56D00C316BB /* EditedVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EditedVertex.cpp; sourceTree = "<group>"; };
+		2058B89915CBC56D00C316BB /* EditedVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditedVertex.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,8 @@
 				2058B88215CBA6E900C316BB /* Line.cpp */,
 				2058B88515CBA6E900C316BB /* Vertex.h */,
 				2058B88415CBA6E900C316BB /* Vertex.cpp */,
+				2058B89815CBC56D00C316BB /* EditedVertex.cpp */,
+				2058B89915CBC56D00C316BB /* EditedVertex.h */,
 			);
 			path = vec;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 				2058B88E15CBA9DB00C316BB /* Canvas.cpp in Sources */,
 				2058B89115CBAE6200C316BB /* Viewport.cpp in Sources */,
 				2058B89415CBAEC800C316BB /* Rect.cpp in Sources */,
+				2058B89A15CBC56D00C316BB /* EditedVertex.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +293,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					AllegroVectorEditor/ext/boost/include,
+				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -311,7 +320,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					AllegroVectorEditor/ext/boost/include,
+				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;

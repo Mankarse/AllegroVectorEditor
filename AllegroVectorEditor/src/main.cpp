@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <allegro5/allegro.h>
 #include <iostream>
-#include <thread>
 #include "ave/Canvas.h"
 #include "ave/Viewport.h"
 int main(int argc, char **argv){
@@ -29,8 +28,8 @@ int main(int argc, char **argv){
     
     
     
-    ave::Canvas canvas{};
-    ave::Viewport viewport{canvas};
+    ave::Canvas canvas;
+    ave::Viewport viewport(canvas);
     ALLEGRO_KEYBOARD_STATE keyboard;
     al_get_keyboard_state(&keyboard);
     while(!al_key_down(&keyboard, ALLEGRO_KEY_ESCAPE)) {

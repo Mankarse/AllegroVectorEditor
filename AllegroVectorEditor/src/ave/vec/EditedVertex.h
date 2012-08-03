@@ -6,9 +6,20 @@
 //  Copyright (c) 2012 Evan Wallace. All rights reserved.
 //
 
-#ifndef __AllegroVectorEditor__EditedVertex__
-#define __AllegroVectorEditor__EditedVertex__
+#ifndef AllegroVectorEditor__EditedVertex
+#define AllegroVectorEditor__EditedVertex
 
-#include <iostream>
-
-#endif /* defined(__AllegroVectorEditor__EditedVertex__) */
+#include "Vertex.h"
+namespace ave{ namespace vec{
+class EditedVertex {
+    public:
+    EditedVertex(EditedVertex const&) = default;
+    EditedVertex& operator=(EditedVertex const&) = default;
+    EditedVertex(EditedVertex&&) = default;
+    EditedVertex& operator=(EditedVertex&&) = default;
+    Vertex point;
+    float screenSize;
+    Colour colour;
+};
+}}
+#endif /* defined(AllegroVectorEditor__EditedVertex) */
